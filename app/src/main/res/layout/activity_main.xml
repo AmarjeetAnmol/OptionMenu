@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/drawerLayout"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:background="#FF9800"
+        android:id="@+id/menudesign"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <TextView
+            android:textColor="@color/white"
+            android:text="Menu"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_marginLeft="15dp"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginTop="50dp"
+        android:id="@+id/firstBOX"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/menudesign"
+         app:boxStrokeColor="#FF9800"
+             >
+        <EditText
+            android:textStyle="bold"
+            android:text="PopUp Menu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"/>
+        <Toolbar
+            android:id="@+id/popupToolbar"
+            android:layout_marginLeft="290dp"
+            android:layout_marginTop="-65dp"
+            android:navigationIcon="@drawable/baseline_play_arrow_24"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/SecondBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/firstBOX"
+        app:boxStrokeColor="#FF9800"
+        >
+        <EditText
+            android:id="@+id/optionmenu"
+            android:textStyle="bold"
+            android:text="Option Menu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"/>
+        <Toolbar
+            android:id="@+id/optionToolbar"
+            android:layout_marginLeft="290dp"
+            android:layout_marginTop="-65dp"
+            android:navigationIcon="@drawable/baseline_play_arrow_24"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/SecondBox"
+        app:boxStrokeColor="#FF9800"
+        >
+        <EditText
+            android:id="@+id/contexmenu"
+            android:textStyle="bold"
+            android:text="Contex Menu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"/>
+
+        <Toolbar
+            android:id="@+id/contexToolbar"
+          android:layout_marginLeft="290dp"
+            android:layout_marginTop="-65dp"
+            android:navigationIcon="@drawable/baseline_play_arrow_24"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+</RelativeLayout>
+
+</androidx.drawerlayout.widget.DrawerLayout>
